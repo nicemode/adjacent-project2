@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Background Color </title>
+    <link rel="stylesheet" type="text/css" href="project2.css">
+  </head>
+
+<body>
+  <button>Press space bar to change the background color</button>
+  <script type="text/javascript">
+    var color = ["#FF5733","#731276", "#63D7A9"];
+    var i = 0;
+    document.querySelector("button").addEventListener("keyup", function(){
+      i = i < color.length ? ++i : 0;
+    document.querySelector("body").style.background = color[i]
+    })
+
+  </script src="/path/to/project2.js">
+
+</body>
+</html>
